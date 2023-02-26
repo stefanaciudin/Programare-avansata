@@ -13,7 +13,7 @@ Compute the result obtained after performing the following calculations:
 Compute the sum of the digits in the result obtained in the previous step. This is the new result. While the new result has more than one digit, continue to sum the digits of the result.
 Display on the screen the message: "Willy-nilly, this semester I will learn " + languages[result].
 
-Programul afișează mesajul *Hello World*, definește string-ul dat și calculează valoarea lui *n* după cerințe. Programul va calcula cifra de control a numărului *n* și va afișa mesajul *Willy-nilly, this semester I will learn " + languages[result]*, adică textul *Java*.
+Programul afișează mesajul *Hello World*, definește string-ul dat și calculează valoarea lui *n* după cerințe. Programul va calcula cifra de control a numărului *n* și va afișa mesajul *Willy-nilly, this semester I will learn " + languages[result]*, adică textul *Willy-nilly, this semester I will learn Java*.
 
 ## Homework
 Let n be an integer given as a command line argument. Validate the argument!
