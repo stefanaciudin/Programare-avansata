@@ -26,7 +26,7 @@ Programul preia ca argument un număr natural nenul *n*. Pe baza acestui număr 
 - Prima linie: valorile 1, 2,..., n
 - A doua linie: valorile n, 1, 2,..., (n-1) 
 ...
-- Ultima linie: valorile n, (n-1),..., 1
+- Ultima linie: valorile n, (n-1),..., 1 .
 Pentru fiecare linie și coloană, in variabilele de tip String *row* și *column* se vor concatena valorile existente în matrice. Aceste valori vor fi afișate la ecran pentru *n<= 30_000*, altfel se va afișa doar timpul de rulare.
 
 ## Bonus
@@ -36,7 +36,7 @@ Se va calcula matricea de adiacență *A* în funcție de parametrul *n* primit 
 - nodul 0 este vecin cu 1 și n-1
 - nodul 1 este vecin cu 0 și 2
 ...
-- nodul n-1 este vecin cu 0 și n-2
+- nodul n-1 este vecin cu 0 și n-2 .
 Matricea obținută va fi ridicată la puterile 2, 3,..., n și rezultatele vor fi afișate.
 
 Create the adjacency matrix of a regular graph. The number of vertices and the vertex degree are given as arguments.
