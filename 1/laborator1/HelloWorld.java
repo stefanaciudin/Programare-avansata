@@ -1,11 +1,12 @@
+package laborator1;
 public class HelloWorld {
     public static void main(String args[]) {
         System.out.println("Hello world!");
         String languages[] = { "C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java" };
         int n = (int) (Math.random() * 1000000);
         int result = n * 3;
-        result = n + 0b10101 + 0xFF;
-        result = n * 6;
+        result = result + 0b10101 + 0xFF;
+        result = result * 6;
         int sum = 0;
         while (result > 0 || sum > 9) {
             if (result != 0) {
