@@ -1,4 +1,4 @@
-package bonus1;
+package bonus;
 
 /**
  * Generates the adjacency matrix for a cycle graph C_n

@@ -1,4 +1,4 @@
-package homework1;
+package homework;
 
 /**
  * Creates a nxn Latin Square as a matrix

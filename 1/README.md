@@ -41,4 +41,6 @@ Matricea obținută va fi ridicată la puterile 2, 3,..., n și rezultatele vor 
 
 Create the adjacency matrix of a regular graph. The number of vertices and the vertex degree are given as arguments.
 
+Matricea de adiacență se completează în mod circular - pe fiecare rând al matricii vor fi maxim *numEdges* valori de 1, indicând vecinii fiecărui nod. Pentru *degree* par, se va face doar completarea circulară, cu vecinii cei mai apropiați ai nodului. Pentru *degree* impar, la nodul curent se va adăuga ca vecin și nodul diametral opus.
+
 

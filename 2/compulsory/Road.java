@@ -1,16 +1,19 @@
-package compulsory2;
+package compulsory;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
+/**
+ * class Road - has a length, speed limit, a start and end of type location and a type of RoadType
+ */
 public class Road {
     private Location start;
     private Location end;
-    private RoadTypes type;
+    private RoadType type;
     private float length;
     private float speedLimit;
 
-    public Road(RoadTypes type, float length, float speedLimit, Location startLocation, Location endLocation) {
+    public Road(RoadType type, float length, float speedLimit, Location startLocation, Location endLocation) {
         this.type = type;
         this.length = length;
         this.speedLimit = speedLimit;
@@ -18,7 +21,8 @@ public class Road {
         this.end = endLocation;
     }
 
-    public boolean isValid() {
+    public boolean isValid() { // checks if the road length given is valid - the road length has to be bigger
+        // than the euclidean distance between the start and end locations
         float startX = this.start.getX();
         float startY = this.start.getY();
         float endX = this.end.getX();
@@ -59,11 +63,11 @@ public class Road {
         this.start = start;
     }
 
-    public RoadTypes getType() {
+    public RoadType getType() {
         return type;
     }
 
-    public void setType(RoadTypes type) {
+    public void setType(RoadType type) {
         this.type = type;
     }
 

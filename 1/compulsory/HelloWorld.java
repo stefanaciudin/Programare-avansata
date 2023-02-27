@@ -1,8 +1,8 @@
-package laborator1;
+package compulsory;
 public class HelloWorld {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println("Hello world!");
-        String languages[] = { "C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java" };
+        String[] languages = { "C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java" };
         int n = (int) (Math.random() * 1000000);
         int result = n * 3;
         result = result + 0b10101 + 0xFF;
