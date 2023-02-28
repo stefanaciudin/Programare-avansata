@@ -1,4 +1,5 @@
 package compulsory;
+
 /**
  * Class Location - has a name, a LocationType type, and 2 float coordinates x and y
  */
@@ -7,6 +8,10 @@ public class Location {
     private LocationType type;
     private float x;
     private float y;
+
+    public Location() {
+
+    }
 
     public Location(String name, LocationType type, float x, float y) {
         this.name = name;

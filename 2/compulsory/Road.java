@@ -13,6 +13,10 @@ public class Road {
     private float length;
     private float speedLimit;
 
+    public Road() {
+
+    }
+
     public Road(RoadType type, float length, float speedLimit, Location startLocation, Location endLocation) {
         this.type = type;
         this.length = length;
