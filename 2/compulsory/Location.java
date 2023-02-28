@@ -54,6 +54,11 @@ public class Location {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Location{" +
+                "name='" + name + '\'' +
+                ", type=" + type +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
     }
 }

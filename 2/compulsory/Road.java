@@ -4,7 +4,8 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
 /**
- * class Road - has a length, speed limit, a start and end of type location and a type of RoadType
+ * class Road - has a length, speed limit, a start and end of type location and
+ * a type of RoadType
  */
 public class Road {
     private Location start;
@@ -77,6 +78,12 @@ public class Road {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Road{" +
+                "start=" + start +
+                ", end=" + end +
+                ", type=" + type +
+                ", length=" + length +
+                ", speedLimit=" + speedLimit +
+                '}';
     }
 }
