@@ -19,13 +19,12 @@ public class RouteSolution {
         long usedMemoryBefore = runtime.totalMemory() - runtime.freeMemory();
         long initialTime = System.currentTimeMillis();
         RouteSolution sol = new RouteSolution();
-        int locationsNumber = 100;
-        int roadsNumber = 2500;
+        int locationsNumber = 500;
+        int roadsNumber = locationsNumber*(locationsNumber+1)/2;
         sol.generateLocations(locationsNumber);
         sol.generateRoads(locationsNumber, roadsNumber);
-        // RouteProblem pb = new RouteProblem(locations, roads);
-        System.out.println(locations);
-        System.out.println(roads);
+        //System.out.println(locations);
+        //System.out.println(roads);
         List<Location> ans;
         for (int i = 0; i < locationsNumber; i++)
             for (int j = i + 1; j < locationsNumber; j++) {
@@ -94,6 +93,7 @@ public class RouteSolution {
         }
 
         // building the shortest path by following the previous map
+        // shortestPath will save the shortest path between 2 locations
         ArrayList<Location> shortestPath = new ArrayList<>();
         Location location = end;
         while (previous.containsKey(location)) { // we add to the shortest path array

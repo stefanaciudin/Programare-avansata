@@ -70,7 +70,8 @@ public class RouteProblem {
 
     public boolean canReach(Location start, Location end) {
         Set<Location> visited = new HashSet<>(); // using a hash set to avoid visiting the same location twice
-        return canReachHelper(start, end, visited) || canReachHelper(end, start, visited);
+        return canReachHelper(start, end, visited) || canReachHelper(end, start, visited); // if you can reach the start from the end you can also reach the end from the start
+        // and vice-versa
     }
 
     private boolean canReachHelper(Location current, Location end, Set<Location> visited) {

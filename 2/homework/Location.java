@@ -21,8 +21,6 @@ public abstract class Location {
         this.y = y;
     }
 
-    // setters and getters
-
     public String getName() {
         return name;
     }
