@@ -19,3 +19,14 @@ The main specifications of the application are:
 - Put all the projects in a TreeSet and print them sorted by their names.
 
 Au fost create clasele *Project*, *Student* și *TestStudentProject*, cea din urmă fiind creată pentru a testa obiecte create în primele două clase. Atât clasele *Project* și *Student* au ca atribut numele proiectului sau studentului respectiv. În clasa *TestStudentProject*, au fost create obiectele descrise în exemplu, studenții au fost stocați într-o listă înlănțuită, iar proiectele într-un TreeSet. Ambele seturi de obiecte se afișează la ecran sortate în ordinea alfabetică a numelor acestora.
+
+## Homework
+
+- Create a class that describes the problem.
+- Using Java Stream API, write a query that display all the students that have a number of preferences lower than the average number of preferences.
+- Use a third-party library in order to generate random fake names for students and projects.
+- Create a Greedy algorithm in order to solve the problem.
+
+S-a adăugat o clasă suplimentară pentru a modela și rezolva problema dată - *AllocationProblem*. Pentru a genera o instanță mare a problemei, se folosește librăria *JavaFaker*, care generează numele studenților random. Pentru generarea proiectelor, metoda *generatePreferences* va genera un număr de preferințe mai mare decât numărul de studenți, apoi va alege random din acest set de proiecte generat pe care i le va atribui fiecărui student. Metoda *printStudents* afișează studenții cu un număr de preferințe mai mic decât media totală a preferințelor studenților.
+
+## Bonus
