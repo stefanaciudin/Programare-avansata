@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"compulsory","l":"Catalog"},{"p":"compulsory","l":"CatalogManager"},{"p":"compulsory","l":"Document"},{"p":"compulsory","l":"InvalidCatalogException"},{"p":"compulsory","l":"Main"}];updateSearchResults();
