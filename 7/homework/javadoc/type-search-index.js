@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"homework","l":"Cell"},{"p":"homework","l":"Exploration"},{"p":"homework","l":"ExplorationMap"},{"p":"homework","l":"Robot"},{"p":"homework","l":"SharedMemory"},{"p":"homework","l":"TimeKeeper"},{"p":"homework","l":"Token"}];updateSearchResults();
