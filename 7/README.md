@@ -1,4 +1,4 @@
-# Laborator 4
+# Laborator 7
 
 *Concurrency*
 Consider a map represented as a n x n square matrix, each cell being an individual location of the map.
