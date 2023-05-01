@@ -20,3 +20,12 @@ The main specifications of the application are:
 
 A fost creată baza de date *music_library* folosind MySql. S-a creat și un script SQL care creează toate tabelele necesare, și tabela de legătură *album_genres*.
 Pentru a controla conexiunea cu baza de date, s-a creat clasa *DatabaseManager*. S-au creat clase DAO - *ArtistDAO*, *GenreDAO*, *AlbumDao* - acestea folosesc obiecte de tip *Artist*, *Genre* și *Album*. Clasa *Test* este utilizată pentru a testa metodele implementate.
+
+## Homework
+
+- Create an object-oriented model of the data managed by the Java application.
+- Implement all the DAO classes.
+- Use a connection pool in order to manage database connections, such as C3PO, HikariCP or Apache Commons DBCP.
+- Create a tool to import data from a real dataset, such as Rolling Stone's 500 Greatest Albums of All Time (or other)
+
+La modelul implementat în **compulsory**, s-a adăugat modificarea conexiunii: se folosește HikariCP. Pentru a importa datele din fișierul *albumlist.csv*, s-a creat clasa *DataImporter*, care este testată în *DataImporterTest*. Baza de date va fi populată cu 500 de albume, și cu artiștii și genurile corespunzătoare acestora.
