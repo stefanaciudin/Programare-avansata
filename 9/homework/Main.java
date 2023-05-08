@@ -1,21 +1,24 @@
 package org.example;
 
+import org.example.abstractRepository.AbstractRepository;
+import org.example.abstractRepository.AlbumRepository;
+import org.example.abstractRepository.ArtistRepository;
+import org.example.abstractRepository.SongRepository;
 import org.example.entity.Album;
 import org.example.entity.Artist;
 import org.example.entity.Song;
-import org.example.repository.AlbumRepository;
-import org.example.repository.ArtistRepository;
-import org.example.repository.SongRepository;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("Artist");
-        ArtistRepository artistRepository = new ArtistRepository(emf);
-        AlbumRepository albumRepository = new AlbumRepository(emf);
-        SongRepository songRepository = new SongRepository(emf);
+        ArtistRepository artistRepository = new ArtistRepository();
+        AlbumRepository albumRepository = new AlbumRepository();
+        SongRepository songRepository = new SongRepository();
 
         Artist artist=new Artist("bla-bla");
         artistRepository.create(artist);
@@ -38,6 +41,6 @@ public class Main {
         System.out.println("testare metoda findByName pentru song: " + songRepository.findByName("e s"));
 
         TestJPA testJPA = new TestJPA();
-        TestJPA.test();
+        testJPA.test();
     }
 }
